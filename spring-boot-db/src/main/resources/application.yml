@@ -7,6 +7,17 @@ security:
   basic:
     enabled: false
 
+logging:
+  file: myapplication.log
+
+info:
+  app:
+    version: @project.version@
+    encoding: UTF-8
+    java:
+      source: 1.8
+      target: 1.8
+
 management:
   security:
     enabled: false
