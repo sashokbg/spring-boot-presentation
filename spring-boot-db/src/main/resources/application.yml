@@ -2,10 +2,9 @@ spring:
   datasource:
     platform: h2
     url: jdbc:h2:mem:spring-boot;Mode=Oracle;DB_CLOSE_ON_EXIT=FALSE
-
-security:
-  basic:
-    enabled: false
+#  h2:
+#    console:
+#      enabled: true
 
 logging:
   file: myapplication.log
@@ -17,6 +16,10 @@ info:
     java:
       source: 1.8
       target: 1.8
+
+security:
+  basic:
+    enabled: false
 
 management:
   security:
